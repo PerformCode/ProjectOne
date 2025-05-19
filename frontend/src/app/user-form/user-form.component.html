@@ -1,0 +1,19 @@
+<h2>User Form</h2>
+
+<form (ngSubmit)="onSubmit()" #userForm="ngForm">
+  <label>
+    Name:
+    <input type="text" [(ngModel)]="user.name" name="name" required>
+  </label>
+  <br />
+
+  <label>
+    Email:
+    <input type="email" [(ngModel)]="user.email" name="email" required>
+  </label>
+  <br /><br />
+
+<bolt-button color="success">
+  <button type="submit">Submit</button>
+</bolt-button>
+</form>
